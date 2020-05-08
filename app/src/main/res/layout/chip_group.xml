@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.ChipGroup android:id="@+id/chip_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:checkedChip="@id/all_tasks_chip"
+    app:singleSelection="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/all_tasks_chip"
+        android:text="@string/all_tasks"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/primary_text_light"
+        app:checkedIconVisible="true"
+        app:chipBackgroundColor="@drawable/selected_highlight" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/completed_tasks_chip"
+        android:text="@string/completed"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/primary_text_light"
+        app:checkedIconVisible="true"
+        app:chipBackgroundColor="@drawable/selected_highlight"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/active_tasks_chip"
+        android:text="@string/active"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/primary_text_light"
+        app:checkedIconVisible="true"
+        app:chipBackgroundColor="@drawable/selected_highlight">
+
+    </com.google.android.material.chip.Chip>
+
+</com.google.android.material.chip.ChipGroup>
